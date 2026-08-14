@@ -70,7 +70,7 @@ function isWantedDate(date) {
   }
 
   // Sep 9 onward
-  if (date >= "2026-09-09") {
+  if (date >= "2026-09-09" && date <= "2026-09-16") {
     return true;
   }
 
@@ -379,7 +379,7 @@ async function runScan(page) {
         );
 
         await sendNtfy(
-          "🚨 ODYSSEY PAIR FOUND",
+          "ODYSSEY PAIR FOUND",
           `${date} · ${showtime.time}\n${pairText}\nAMC Lincoln Square IMAX 70mm`,
           bookingUrl
         );
