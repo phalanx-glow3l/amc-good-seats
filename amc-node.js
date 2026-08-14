@@ -280,6 +280,16 @@ async function getAvailableSeats(page, showtimeId) {
 
       if (/occupied/i.test(label)) continue;
       if (/unavailable/i.test(label)) continue;
+const label =
+  input.getAttribute("aria-label") || "";
+
+if (/occupied/i.test(label)) continue;
+if (/unavailable/i.test(label)) continue;
+
+// Ignore accessible / wheelchair / companion seating
+if (/wheelchair/i.test(label)) continue;
+if (/accessible/i.test(label)) continue;
+if (/companion/i.test(label)) continue;
 
       // Captures seat labels like H18 or AA12
       const match =
