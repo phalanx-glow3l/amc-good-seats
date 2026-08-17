@@ -35,8 +35,8 @@ const THEATER_URL =
 
 const MOVIE = "the odyssey";
 
-// No overnight / 2 AM screenings
-const MIN_SHOWTIME_MINUTES = 6 * 60;      // 6:00 AM
+// No overnight / early AM screenings
+const MIN_SHOWTIME_MINUTES = 7 * 60;      // 7:00 AM
 const MAX_SHOWTIME_MINUTES = 24 * 60;     // midnight
 
 // Your private ntfy topic will be stored as a GitHub secret later
