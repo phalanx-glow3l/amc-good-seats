@@ -3,8 +3,6 @@ name: Check AMC Seats
 on:
   push:
     branches: [main]
-  schedule:
-    - cron: "7,22,37,52 * * * *"
   workflow_dispatch:
     inputs:
       test_mode:
